@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Stress Testing — Garden — Sebastian Rink</title>
+  <meta name="description" content="A digital garden note on climate stress testing — how banks and regulators assess climate-related financial risks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Sebastian Rink</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../papers.html">Papers</a></li>
+      <li><a href="index.html" class="active">Garden</a></li>
+      <li><a href="../teaching.html">Teaching</a></li>
+      <li><a href="../path.html">Path</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Garden</a> <span>›</span> Climate Stress Testing</div>
+    <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-bottom:0.5rem;">
+      <h1 style="margin:0;">Climate Stress Testing</h1>
+      <span class="status status-growing">🌿 Growing</span>
+    </div>
+    <p class="lead">How banks test resilience against climate scenarios — and why the methodology still needs to catch up.</p>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="node-body">
+
+      <div class="node-section">
+        <h2>📌 What is it?</h2>
+        <p>
+          Climate stress testing is the practice of assessing how financial institutions — primarily banks — would fare under severe climate-related scenarios. Stress tests have long been a core tool of financial supervision (the Fed's annual DFAST, the ECB's SREP process), and regulators have increasingly adapted them to assess climate-specific risks.
+        </p>
+        <p>
+          Two broad risk types are tested: <em>physical risks</em> (floods, droughts, heatwaves that damage borrowers' assets or productivity) and <em>transition risks</em> (carbon price increases, policy changes, technology shifts that make carbon-intensive activities suddenly more costly). In both cases, the stress test traces how these external shocks would affect firms in a bank's loan portfolio and, through loan defaults, the bank's capital adequacy.
+        </p>
+      </div>
+
+      <div class="node-section">
+        <h2>💡 Why it matters</h2>
+        <p>
+          Banks need to understand their climate exposure not just for regulatory compliance but for sound risk management. If a bank has a heavily carbon-exposed loan book and carbon prices spike suddenly — or a large part of its SME portfolio is concentrated in flood-prone regions — the resulting defaults could be material.
+        </p>
+        <p>
+          The ECB now requires banks to incorporate climate risk into their capital planning through the Supervisory Review and Evaluation Process (SREP), starting in 2025. The Bank of England has run exploratory Climate Biennial Exploratory Scenarios. But the methodological foundations remain underdeveloped relative to what supervisors need.
+        </p>
+      </div>
+
+      <div class="node-section">
+        <h2>🔬 In my research</h2>
+        <p>
+          Two papers address climate stress testing directly from different angles.
+        </p>
+        <p>
+          <strong>C-STRIKE</strong> (with Christina Bannier) introduces a modular, bottom-up framework for simulating climate shock transmission. Unlike top-down macroeconomic scenario approaches (like NGFS scenarios), C-STRIKE models at the firm level: how does a specific shock — a EUR 100 carbon price spike, a 1-in-100-year flood, a European heatwave — affect individual firms' financial position, and how do those effects ripple up to bank credit risk? The framework covers three transmission layers: direct firm effects, supply chain linkages, and macroeconomic demand feedback.
+        </p>
+        <p>
+          <strong>Machine Learning and Micro-Prudential Climate Stress Testing</strong> (with Haas, Kempa, and Moslener) addresses a critical data limitation: most firms — especially SMEs — do not report their GHG emissions, making coverage of any firm-level climate stress test severely restricted. We integrate machine learning-based emissions estimation into the stress test, dramatically expanding firm coverage. The results show that a EUR 100 carbon price shock would nearly double the number of loss-making firms and increase loan defaults by 7.9%, with SMEs bearing a disproportionate burden.
+        </p>
+      </div>
+
+      <div class="node-section">
+        <h2>⚠️ Key limitations of existing approaches</h2>
+        <ul style="margin-left:1.5rem; color:var(--text-muted); font-size:0.93rem; list-style:disc;">
+          <li>NGFS scenarios are designed for long horizons and smooth trajectories — they do not capture sudden, abrupt shocks well.</li>
+          <li>Firm-level emissions data is available for only a fraction of firms in bank portfolios, particularly for SMEs.</li>
+          <li>Physical risk scenarios require spatially detailed data on asset locations that most banks do not collect systematically.</li>
+          <li>Cascade effects through supply chains are difficult to model and often omitted.</li>
+        </ul>
+      </div>
+
+      <div class="node-section">
+        <h2>🔗 Related concepts</h2>
+        <div class="node-relations">
+          <a href="net-zero-banking.html" class="relation-chip">🏦 Net-Zero Banking</a>
+          <a href="ml-sustainability.html" class="relation-chip">🤖 ML for Sustainability Data</a>
+          <a href="carbon-price-uncertainty.html" class="relation-chip">⚡ Carbon Price Uncertainty</a>
+          <a href="../research.html#climate-risk" class="relation-chip">🌡️ Research: Climate Risk</a>
+        </div>
+      </div>
+
+      <div class="node-section">
+        <h2>📄 Related papers</h2>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <div class="paper-entry" style="margin:0; padding:1rem 1.25rem;">
+            <div class="paper-title">Climate Shock Transmission and Risk Inference for Kredit Evaluation (C-STRIKE)</div>
+            <div class="paper-authors">Bannier &amp; Rink · FIRM Research Project · 2025</div>
+            <a href="../papers.html#wp-cstrike" class="btn btn-sm btn-outline" style="margin-top:0.5rem;">Full entry →</a>
+          </div>
+          <div class="paper-entry" style="margin:0; padding:1rem 1.25rem;">
+            <div class="paper-title">Machine Learning and Micro-Prudential Climate Stress Testing</div>
+            <div class="paper-authors">Haas, Kempa, Moslener, Rink · 2025</div>
+            <a href="../papers.html#wp-ml-stress" class="btn btn-sm btn-outline" style="margin-top:0.5rem;">Full entry →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="node-section">
+        <div class="tag-list">
+          <span class="tag">climate stress testing</span>
+          <span class="tag">credit risk</span>
+          <span class="tag">banking</span>
+          <span class="tag">physical risk</span>
+          <span class="tag">transition risk</span>
+          <span class="tag">ECB</span>
+          <span class="tag">NGFS</span>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border);">
+        <a href="index.html" class="btn btn-outline">← Back to Garden</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><div class="footer-brand">Sebastian Rink</div><div>Researcher in Sustainable Finance · Frankfurt School</div></div>
+    <nav class="footer-links"><a href="../research.html">Research</a><a href="../papers.html">Papers</a><a href="../contact.html">Contact</a></nav>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

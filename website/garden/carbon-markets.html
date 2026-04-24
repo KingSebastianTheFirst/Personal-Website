@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Markets & Asset Pricing — Garden — Sebastian Rink</title>
+  <meta name="description" content="A digital garden note on carbon markets, carbon pricing, and how carbon exposure affects stock returns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Sebastian Rink</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../papers.html">Papers</a></li>
+      <li><a href="index.html" class="active">Garden</a></li>
+      <li><a href="../teaching.html">Teaching</a></li>
+      <li><a href="../path.html">Path</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Garden</a> <span>›</span> Carbon Markets &amp; Asset Pricing</div>
+    <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-bottom:0.5rem;">
+      <h1 style="margin:0;">Carbon Markets &amp; Asset Pricing</h1>
+      <span class="status status-growing">🌿 Growing</span>
+    </div>
+    <p class="lead">Cap-and-trade systems, carbon prices, and what high emissions actually cost in equity markets.</p>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="node-body">
+
+      <div class="node-section">
+        <h2>📌 What are carbon markets?</h2>
+        <p>
+          Carbon markets — formally known as emissions trading systems (ETS) or cap-and-trade schemes — are market mechanisms for pricing greenhouse gas emissions. A regulator sets a cap on total allowable emissions and issues permits accordingly. Firms that need to emit must hold permits; those that can reduce emissions cheaply can sell excess permits to higher-cost emitters. The price of permits is determined by supply and demand.
+        </p>
+        <p>
+          The EU ETS is the world's largest carbon market, covering around 40% of EU greenhouse gas emissions across energy, heavy industry, and aviation. The California Cap-and-Trade program and China's national ETS are other major examples. As of 2024, carbon pricing instruments cover roughly 24% of global GHG emissions.
+        </p>
+      </div>
+
+      <div class="node-section">
+        <h2>💡 The carbon premium debate</h2>
+        <p>
+          If carbon markets work as intended, high-emission firms face higher costs and should earn lower equity returns (a "carbon discount") as investors price in their exposure. Alternatively, investors may demand a higher return from high-emission firms as compensation for bearing carbon transition risk (a "carbon premium"). The empirical literature has produced conflicting evidence on which effect dominates.
+        </p>
+        <p>
+          My research with Aryan Goswami provides a resolution: the relationship is <em>state-dependent</em>. The regime of carbon price uncertainty — not just the level — is the key variable. See below.
+        </p>
+      </div>
+
+      <div class="node-section">
+        <h2>🔬 In my research</h2>
+        <p>
+          In "Carbon Price Volatility and Stock Returns" (with Aryan Goswami, 2026), we study whether uncertainty in carbon markets changes how equity markets price firm-level carbon exposure. We use a monthly panel of STOXX Europe 600 firms over 2013–2022, matched with firm-level GHG data, EU allowance prices, and the option-implied Carbon VIX (CVIX) — a measure of market-implied carbon price volatility.
+        </p>
+        <p>Key findings:</p>
+        <ul style="margin-left:1.5rem; margin-bottom:1rem; color:var(--text-muted); font-size:0.93rem; list-style:disc;">
+          <li>In low-CVIX periods, high-emission firms trade at a modest discount (consistent with carbon discounting by investors).</li>
+          <li>In high-CVIX periods, the relationship reverses: a 10-point CVIX increase raises monthly excess returns for top emitters by ~0.30 percentage points.</li>
+          <li>The effect is present for Scope 1 (direct) and Scope 2 (energy-related) emissions and partially for Scope 3 (value chain) emissions.</li>
+          <li>The finding reconciles the conflicting evidence in the literature: both a positive and negative carbon premium can exist, depending on the volatility regime.</li>
+        </ul>
+        <p>
+          Practically, this means that static carbon screens — which treat carbon exposure as a constant risk factor — can systematically misstate expected returns, particularly during periods of climate policy uncertainty.
+        </p>
+      </div>
+
+      <div class="node-section">
+        <h2>🔗 Related concepts</h2>
+        <div class="node-relations">
+          <a href="carbon-price-uncertainty.html" class="relation-chip">⚡ Carbon Price Uncertainty</a>
+          <a href="climate-stress-testing.html" class="relation-chip">🌡️ Climate Stress Testing</a>
+          <a href="responsible-investment.html" class="relation-chip">💼 Responsible Investment</a>
+          <a href="../research.html#carbon-markets" class="relation-chip">⚡ Research: Carbon Markets</a>
+        </div>
+      </div>
+
+      <div class="node-section">
+        <h2>📄 Related paper</h2>
+        <div class="paper-entry" style="margin:0;">
+          <div class="paper-title">Carbon Price Volatility and Stock Returns</div>
+          <div class="paper-authors">Goswami &amp; Rink · Working paper · 2026</div>
+          <div class="flex-row" style="margin-top:0.75rem;">
+            <a href="https://ssrn.com/abstract=6168521" target="_blank" rel="noopener" class="btn btn-sm btn-outline">SSRN →</a>
+            <a href="../papers.html#wp-carbon-vol" class="btn btn-sm btn-outline">Full entry</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="node-section">
+        <div class="tag-list">
+          <span class="tag">carbon markets</span>
+          <span class="tag">ETS</span>
+          <span class="tag">carbon premium</span>
+          <span class="tag">asset pricing</span>
+          <span class="tag">stock returns</span>
+          <span class="tag">EU ETS</span>
+          <span class="tag">climate policy</span>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border);">
+        <a href="index.html" class="btn btn-outline">← Back to Garden</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><div class="footer-brand">Sebastian Rink</div><div>Researcher in Sustainable Finance · Frankfurt School</div></div>
+    <nav class="footer-links"><a href="../research.html">Research</a><a href="../papers.html">Papers</a><a href="../contact.html">Contact</a></nav>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

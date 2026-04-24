@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Garden — Sebastian Rink</title>
+  <meta name="description" content="A digital garden of ideas from sustainable finance research — evolving notes on ESG data, climate risk, EU Taxonomy, carbon markets, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Sebastian Rink</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../papers.html">Papers</a></li>
+      <li><a href="index.html" class="active">Garden</a></li>
+      <li><a href="../teaching.html">Teaching</a></li>
+      <li><a href="../path.html">Path</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Digital Garden 🌿</h1>
+    <p class="lead">An evolving collection of ideas, concepts, and connections from sustainable finance research.</p>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+
+    <!-- What is this? -->
+    <div class="intro-box" style="margin-bottom:2.5rem;">
+      <h3 style="margin-bottom:0.5rem;">What is a digital garden?</h3>
+      <p>
+        A digital garden is a set of living notes — somewhere between a research wiki and a personal notebook. Unlike a finished article or a blog post, garden notes are not complete or polished. They grow over time as ideas develop. Some are early sketches; others have been refined through papers, teaching, and conversations with colleagues.
+      </p>
+      <p style="margin-top:0.5rem;">
+        The nodes below represent concepts central to my research. They are connected to papers, related themes, and each other. You are welcome to explore in any order. The status system shows how mature each note is:
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:0.75rem;">
+        <span class="status status-seedling">🌱 Seedling — early sketch or short note</span>
+        <span class="status status-growing">🌿 Growing — developed with links</span>
+        <span class="status status-evergreen">🌳 Evergreen — mature and stable</span>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="garden-filters">
+      <button class="filter-btn active" data-filter="all">All nodes</button>
+      <button class="filter-btn" data-filter="evergreen">🌳 Evergreen</button>
+      <button class="filter-btn" data-filter="growing">🌿 Growing</button>
+      <button class="filter-btn" data-filter="seedling">🌱 Seedling</button>
+    </div>
+
+    <!-- Node grid -->
+    <div class="grid-3">
+
+      <div class="garden-card" data-status="evergreen">
+        <div class="garden-card-head">
+          <h3><a href="eu-taxonomy.html">EU Taxonomy</a></h3>
+          <span class="status status-evergreen">🌳 Evergreen</span>
+        </div>
+        <p>The EU's classification system for environmentally sustainable economic activities — how it works, what it tries to achieve, and what my research says about its effects on ESG ratings.</p>
+        <div class="tag-list">
+          <span class="tag">regulation</span>
+          <span class="tag">ESG</span>
+          <span class="tag">taxonomy</span>
+          <span class="tag">capital allocation</span>
+        </div>
+      </div>
+
+      <div class="garden-card" data-status="evergreen">
+        <div class="garden-card-head">
+          <h3><a href="esg-ratings.html">ESG Ratings</a></h3>
+          <span class="status status-evergreen">🌳 Evergreen</span>
+        </div>
+        <p>What ESG ratings measure, why they diverge so dramatically across providers, and what this divergence means for investors, firms, and regulators.</p>
+        <div class="tag-list">
+          <span class="tag">ESG</span>
+          <span class="tag">measurement</span>
+          <span class="tag">finance</span>
+          <span class="tag">rating agencies</span>
+        </div>
+      </div>
+
+      <div class="garden-card" data-status="evergreen">
+        <div class="garden-card-head">
+          <h3><a href="sustainable-lending.html">Sustainable Small Business Finance</a></h3>
+          <span class="status status-evergreen">🌳 Evergreen</span>
+        </div>
+        <p>How banks extend sustainable finance principles to small businesses — and why the sector lags far behind the sustainable finance agenda despite its economic and environmental importance.</p>
+        <div class="tag-list">
+          <span class="tag">banking</span>
+          <span class="tag">SMEs</span>
+          <span class="tag">lending</span>
+          <span class="tag">sustainability</span>
+        </div>
+      </div>
+
+      <div class="garden-card" data-status="growing">
+        <div class="garden-card-head">
+          <h3><a href="climate-stress-testing.html">Climate Stress Testing</a></h3>
+          <span class="status status-growing">🌿 Growing</span>
+        </div>
+        <p>How regulators and banks test financial resilience against climate scenarios — and why the methodology is still catching up with what supervisors actually need.</p>
+        <div class="tag-list">
+          <span class="tag">banking</span>
+          <span class="tag">risk</span>
+          <span class="tag">regulation</span>
+          <span class="tag">scenarios</span>
+        </div>
+      </div>
+
+      <div class="garden-card" data-status="growing">
+        <div class="garden-card-head">
+          <h3><a href="responsible-investment.html">Responsible Investment &amp; Decarbonization</a></h3>
+          <span class="status status-growing">🌿 Growing</span>
+        </div>
+        <p>Institutional investors who claim to support Paris Agreement goals — and the gap between their stated commitments and their actual impact on real-economy emissions.</p>
+        <div class="tag-list">
+          <span class="tag">investors</span>
+          <span class="tag">ESG</span>
+          <span class="tag">Paris Agreement</span>
+          <span class="tag">impact</span>
+        </div>
+      </div>
+
+      <div class="garden-card" data-status="growing">
+        <div class="garden-card-head">
+          <h3><a href="ml-sustainability.html">Machine Learning for Sustainability Data</a></h3>
+          <span class="status status-growing">🌿 Growing</span>
+        </div>
+        <p>Why firm-level sustainability data is scarce and inconsistent — and how machine learning can fill the gaps without requiring domain-specific engineering for each metric.</p>
+        <div class="tag-list">
+          <span class="tag">machine learning</span>
+          <span class="tag">ESG data</span>
+          <span class="tag">carbon emissions</span>
+          <span class="tag">prediction</span>
+        </div>
+      </div>
+
+      <div class="garden-card" data-status="growing">
+        <div class="garden-card-head">
+          <h3><a href="carbon-markets.html">Carbon Markets &amp; Asset Pricing</a></h3>
+          <span class="status status-growing">🌿 Growing</span>
+        </div>
+        <p>Cap-and-trade systems, carbon pricing, and the question of whether high-emission firms pay a financial penalty in equity markets — with a focus on the role of price uncertainty.</p>
+        <div class="tag-list">
+          <span class="tag">carbon pricing</span>
+          <span class="tag">markets</span>
+          <span class="tag">asset pricing</span>
+          <span class="tag">uncertainty</span>
+        </div>
+      </div>
+
+      <div class="garden-card" data-status="growing">
+        <div class="garden-card-head">
+          <h3><a href="net-zero-banking.html">Net-Zero Banking</a></h3>
+          <span class="status status-growing">🌿 Growing</span>
+        </div>
+        <p>What it means for a bank to commit to net-zero emissions across its portfolio — and what the evidence says about whether such commitments translate into real change.</p>
+        <div class="tag-list">
+          <span class="tag">banking</span>
+          <span class="tag">net zero</span>
+          <span class="tag">climate commitments</span>
+          <span class="tag">UNEP FI</span>
+        </div>
+      </div>
+
+      <div class="garden-card" data-status="growing">
+        <div class="garden-card-head">
+          <h3><a href="carbon-price-uncertainty.html">Carbon Price Uncertainty</a></h3>
+          <span class="status status-growing">🌿 Growing</span>
+        </div>
+        <p>Why the volatility of carbon prices matters just as much as their level — for investment incentives, risk pricing, and the political economy of climate policy.</p>
+        <div class="tag-list">
+          <span class="tag">carbon pricing</span>
+          <span class="tag">uncertainty</span>
+          <span class="tag">policy</span>
+          <span class="tag">asset pricing</span>
+        </div>
+      </div>
+
+      <div class="garden-card" data-status="seedling">
+        <div class="garden-card-head">
+          <h3><a href="disclosure-design.html">Sustainability Disclosure Design</a></h3>
+          <span class="status status-seedling">🌱 Seedling</span>
+        </div>
+        <p>How sustainability information is presented to stakeholders — and why even accurate, complete data can be misunderstood if disclosure design is ignored.</p>
+        <div class="tag-list">
+          <span class="tag">disclosure</span>
+          <span class="tag">behavioral</span>
+          <span class="tag">ESG</span>
+          <span class="tag">design</span>
+        </div>
+      </div>
+
+    </div><!-- /grid -->
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Sebastian Rink</div>
+      <div>Researcher in Sustainable Finance · Frankfurt School of Finance &amp; Management</div>
+    </div>
+    <nav class="footer-links">
+      <a href="../research.html">Research</a>
+      <a href="../papers.html">Papers</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

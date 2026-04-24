@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Sebastian Rink</title>
+  <meta name="description" content="Research areas of Dr. Sebastian Rink: climate risk, ESG data, sustainable banking, carbon markets, and sustainable finance regulation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Sebastian Rink</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="papers.html">Papers</a></li>
+      <li><a href="garden/index.html">Garden</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="path.html">Path</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Research</h1>
+    <p class="lead">How financial systems interact with climate change — from risk transmission to investor behavior, and from ESG data to regulatory design.</p>
+  </div>
+</header>
+
+<main>
+
+<!-- Overview intro -->
+<section class="section">
+  <div class="container">
+    <div class="intro-box">
+      <p style="font-size:1.05rem; line-height:1.8;">
+        Sustainable finance is a young field with a big remit: understanding whether and how financial markets can help address the climate crisis — and at what cost. My research explores several interconnected parts of this puzzle, combining empirical methods, survey experiments, and machine learning with a genuine interest in whether the findings have real-world implications.
+      </p>
+      <p style="color:var(--text-muted); margin-top:0.5rem;">
+        For the full list of related papers, see the <a href="papers.html">Papers</a> page. For connected ideas and background concepts, explore the <a href="garden/index.html">Digital Garden</a>.
+      </p>
+    </div>
+
+    <!-- Area 1: Climate Risk -->
+    <div id="climate-risk" style="scroll-margin-top:80px; margin-bottom:3.5rem;">
+      <div class="research-card">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+          <div>
+            <span class="area-icon">🌡️</span>
+            <h2 style="font-size:1.5rem;">Climate-Related Financial Risk</h2>
+          </div>
+          <div class="tag-list">
+            <span class="tag">credit risk</span>
+            <span class="tag">stress testing</span>
+            <span class="tag">banking</span>
+            <span class="tag">physical risk</span>
+            <span class="tag">transition risk</span>
+          </div>
+        </div>
+
+        <p class="lead" style="margin-bottom:1rem;">
+          Climate change creates two broad categories of financial risk: <em>physical risks</em> from extreme weather and shifting climate conditions, and <em>transition risks</em> from the policy, regulatory, and market changes needed to decarbonize. Both can travel rapidly through the financial system.
+        </p>
+
+        <h4 style="color:var(--primary); margin-bottom:0.5rem;">Why it matters</h4>
+        <p>
+          Traditional risk models were built for cyclical recessions and market volatility — not for non-linear, long-horizon, geographically cascading climate shocks. Supervisors like the ECB and Bank of England now require banks to incorporate climate risk into their capital planning, but the methodological foundations remain incomplete. This creates real gaps between regulatory intent and what banks can actually model.
+        </p>
+
+        <h4 style="color:var(--primary); margin-top:1.25rem; margin-bottom:0.5rem;">My approach</h4>
+        <p>
+          I work on frameworks for modeling how climate shocks — from carbon price spikes to flood events — transmit through firms' balance sheets and into bank credit portfolios. The C-STRIKE framework models this transmission bottom-up, firm by firm, allowing banks and supervisors to stress-test against specific physical and transition shock scenarios. A separate project brings machine learning into micro-prudential stress testing to extend coverage to small and medium-sized firms where reported emissions data are sparse.
+        </p>
+
+        <h4 style="color:var(--primary); margin-top:1.25rem; margin-bottom:0.5rem;">Connection to policy and practice</h4>
+        <p>
+          These methods are directly relevant to the ECB's supervisory climate risk expectations, the NGFS scenario framework, and bank internal capital adequacy assessments. I am also working on the economic rationale for climate disaster risk finance and pre-emptive intervention — supported by a research grant through GIZ on behalf of BMZ.
+        </p>
+
+        <div style="margin-top:1.25rem;" class="flex-row">
+          <a href="papers.html#wp-cstrike" class="btn btn-sm btn-outline">C-STRIKE paper →</a>
+          <a href="papers.html#wp-ml-stress" class="btn btn-sm btn-outline">ML Stress Testing paper →</a>
+          <a href="garden/climate-stress-testing.html" class="btn btn-sm btn-outline">🌿 Garden node →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Area 2: ESG Data -->
+    <div id="esg-data" style="scroll-margin-top:80px; margin-bottom:3.5rem;">
+      <div class="research-card" style="border-top-color:var(--teal);">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+          <div>
+            <span class="area-icon">📊</span>
+            <h2 style="font-size:1.5rem;">ESG Data &amp; Sustainability Measurement</h2>
+          </div>
+          <div class="tag-list">
+            <span class="tag">ESG ratings</span>
+            <span class="tag">machine learning</span>
+            <span class="tag">carbon emissions</span>
+            <span class="tag">data quality</span>
+            <span class="tag">disclosure</span>
+          </div>
+        </div>
+
+        <p class="lead" style="margin-bottom:1rem;">
+          Sustainability data — carbon emissions, ESG ratings, biodiversity metrics — is the raw material of sustainable finance. But this data is scarce, inconsistent across providers, and often misunderstood by the people who use it.
+        </p>
+
+        <h4 style="color:var(--teal); margin-bottom:0.5rem;">Why it matters</h4>
+        <p>
+          Investors, regulators, and banks all rely on firm-level sustainability data to make decisions. If that data is missing for most firms (especially SMEs), diverges wildly across providers, or is routinely misinterpreted by individuals, then sustainable finance practices built on top of it may be systematically misdirected.
+        </p>
+
+        <h4 style="color:var(--teal); margin-top:1.25rem; margin-bottom:0.5rem;">Two strands of work</h4>
+        <p>
+          The first strand uses machine learning to fill ESG data gaps. Corporate emissions are reported for only a fraction of firms globally. We show that machine learning frameworks — trained on available financial data — can estimate emissions for a much wider set of firms, including SMEs, and can be adapted across different sustainability metrics without metric-specific engineering. This includes quantifying prediction uncertainty, which matters for downstream applications like stress testing.
+        </p>
+        <p>
+          The second strand investigates how individuals process sustainability disclosures. In a large survey experiment (over 10,000 assessments), we show that people systematically overestimate the greenness of polluting firms and underestimate it for clean ones — a central tendency bias that attenuates financial incentives to decarbonize. This holds even for finance professionals and sustainability experts.
+        </p>
+
+        <h4 style="color:var(--teal); margin-top:1.25rem; margin-bottom:0.5rem;">Implications for policy</h4>
+        <p>
+          Disclosure design matters: not just how much data is disclosed, but how it is presented. Our experimental results suggest that some disclosure formats significantly improve individuals' ability to differentiate firm sustainability performance — a practical finding for regulators designing mandatory reporting templates.
+        </p>
+
+        <div style="margin-top:1.25rem;" class="flex-row">
+          <a href="papers.html#wp-ml-data" class="btn btn-sm btn-outline">ML &amp; Sustainability Data →</a>
+          <a href="papers.html#wp-greenness" class="btn btn-sm btn-outline">Perceived Greenness →</a>
+          <a href="garden/ml-sustainability.html" class="btn btn-sm btn-outline">🌿 Garden node →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Area 3: Regulation -->
+    <div id="regulation" style="scroll-margin-top:80px; margin-bottom:3.5rem;">
+      <div class="research-card" style="border-top-color:var(--warm);">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+          <div>
+            <span class="area-icon">📋</span>
+            <h2 style="font-size:1.5rem;">Sustainable Finance Regulation</h2>
+          </div>
+          <div class="tag-list">
+            <span class="tag">EU Taxonomy</span>
+            <span class="tag">ESG ratings</span>
+            <span class="tag">regulation</span>
+            <span class="tag">market efficiency</span>
+          </div>
+        </div>
+
+        <p class="lead" style="margin-bottom:1rem;">
+          Regulators worldwide are designing new rules to steer capital toward sustainable activities. The EU Taxonomy is the most ambitious attempt yet to define, at a granular level, what counts as environmentally sustainable.
+        </p>
+
+        <h4 style="color:var(--warm); margin-bottom:0.5rem;">Why it matters</h4>
+        <p>
+          ESG ratings from different providers diverge dramatically — the same company can be rated highly by one provider and poorly by another. This "aggregate confusion" makes it hard for investors to act on sustainability information and raises doubts about whether ESG markets function efficiently. A clear, science-based classification of sustainable activities could reduce this divergence.
+        </p>
+
+        <h4 style="color:var(--warm); margin-top:1.25rem; margin-bottom:0.5rem;">Key findings</h4>
+        <p>
+          Using Taxonomy alignment data from ISS ESG, my co-authors and I show that EU Taxonomy alignment is significantly positively related to the environmental component of ESG ratings from three of four major providers. The Taxonomy has already begun to reduce measurement divergence — but the potential for further harmonization has not yet fully materialized, particularly for firms with partial Taxonomy exposure.
+        </p>
+
+        <div style="margin-top:1.25rem;" class="flex-row">
+          <a href="papers.html#pub-taxonomy" class="btn btn-sm btn-outline">Disaggregating confusion →</a>
+          <a href="garden/eu-taxonomy.html" class="btn btn-sm btn-outline">🌳 Garden node →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Area 4: Banking -->
+    <div id="banking" style="scroll-margin-top:80px; margin-bottom:3.5rem;">
+      <div class="research-card">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+          <div>
+            <span class="area-icon">🏦</span>
+            <h2 style="font-size:1.5rem;">Sustainable Banking &amp; Lending</h2>
+          </div>
+          <div class="tag-list">
+            <span class="tag">banking</span>
+            <span class="tag">SMEs</span>
+            <span class="tag">relationship lending</span>
+            <span class="tag">net zero</span>
+          </div>
+        </div>
+
+        <p class="lead" style="margin-bottom:1rem;">
+          Banks are the primary source of external finance for most small businesses. If banks integrate sustainability properly into their lending decisions, they can help redirect investment toward a lower-carbon economy.
+        </p>
+
+        <h4 style="color:var(--primary); margin-bottom:0.5rem;">Why it matters</h4>
+        <p>
+          Small and medium-sized enterprises account for 63% of EU firm-level emissions but are almost entirely absent from sustainable finance discussions, which focus overwhelmingly on large, listed corporations. Yet SMEs are where much of the decarbonization challenge lies — and banks are their main interface with financial markets.
+        </p>
+
+        <h4 style="color:var(--primary); margin-top:1.25rem; margin-bottom:0.5rem;">Key findings</h4>
+        <p>
+          A survey of 62 German banks reveals that sustainable finance practices are being implemented much more slowly for SME portfolios than for large corporate clients. Banks prioritize sustainability risk management over business model transformation, and prefer hard quantifiable data over soft sustainability information gathered through relationship lending — despite the relevance of both. The findings suggest a structural mismatch between the sustainability ambitions of the banking sector and actual lending practice.
+        </p>
+
+        <div style="margin-top:1.25rem;" class="flex-row">
+          <a href="papers.html#pub-sme" class="btn btn-sm btn-outline">Sustainable Small Business Lending →</a>
+          <a href="garden/sustainable-lending.html" class="btn btn-sm btn-outline">🌳 Garden node →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Area 5: Investor Behavior -->
+    <div id="investor-behavior" style="scroll-margin-top:80px; margin-bottom:3.5rem;">
+      <div class="research-card" style="border-top-color:var(--teal);">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+          <div>
+            <span class="area-icon">💼</span>
+            <h2 style="font-size:1.5rem;">Climate Finance &amp; Investor Behavior</h2>
+          </div>
+          <div class="tag-list">
+            <span class="tag">institutional investors</span>
+            <span class="tag">Paris Agreement</span>
+            <span class="tag">decarbonization</span>
+            <span class="tag">ESG</span>
+          </div>
+        </div>
+
+        <p class="lead" style="margin-bottom:1rem;">
+          Responsible institutional investors now hold roughly a third of global equity. They publicly commit to aligning their portfolios with Paris Agreement targets. But do their actual investment decisions contribute to real-economy decarbonization?
+        </p>
+
+        <h4 style="color:var(--teal); margin-bottom:0.5rem;">Why it matters</h4>
+        <p>
+          Article 2.1c of the Paris Agreement explicitly calls for financial flows consistent with low-carbon development. If responsible investors primarily allocate capital to companies already green — rather than engaging with high emitters to drive change — they may be meeting the letter of their commitments while missing the spirit.
+        </p>
+
+        <h4 style="color:var(--teal); margin-top:1.25rem; margin-bottom:0.5rem;">Key findings</h4>
+        <p>
+          Using global institutional ownership data, we show that Responsible Investors (UN PRI signatories) do tilt toward lower-emission companies and increase the likelihood of firms committing to emission reduction targets. However, their ownership does not relate to realized emission reductions — and is associated with improvements in ESG <em>ratings</em> rather than actual carbon performance. This suggests a focus on perceived sustainability rather than fundamental decarbonization.
+        </p>
+
+        <div style="margin-top:1.25rem;" class="flex-row">
+          <a href="papers.html#wp-consistency" class="btn btn-sm btn-outline">Consistency or Transformation? →</a>
+          <a href="garden/responsible-investment.html" class="btn btn-sm btn-outline">🌿 Garden node →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Area 6: Carbon Markets -->
+    <div id="carbon-markets" style="scroll-margin-top:80px; margin-bottom:3.5rem;">
+      <div class="research-card" style="border-top-color:var(--warm);">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+          <div>
+            <span class="area-icon">⚡</span>
+            <h2 style="font-size:1.5rem;">Carbon Markets &amp; Asset Pricing</h2>
+          </div>
+          <div class="tag-list">
+            <span class="tag">carbon premium</span>
+            <span class="tag">carbon VIX</span>
+            <span class="tag">emission trading</span>
+            <span class="tag">stock returns</span>
+          </div>
+        </div>
+
+        <p class="lead" style="margin-bottom:1rem;">
+          Cap-and-trade systems convert greenhouse gas emissions into tradable costs. But how does <em>uncertainty</em> about future carbon prices — not just price levels — affect equity markets and investment incentives?
+        </p>
+
+        <h4 style="color:var(--warm); margin-bottom:0.5rem;">Why it matters</h4>
+        <p>
+          The "carbon premium" debate — whether high-emission firms earn higher or lower stock returns — has produced conflicting evidence. Most studies focus on carbon price levels, but our work shows the relationship is state-dependent: the regime of carbon price <em>uncertainty</em> is the key driver.
+        </p>
+
+        <h4 style="color:var(--warm); margin-top:1.25rem; margin-bottom:0.5rem;">Key findings</h4>
+        <p>
+          Using a monthly panel of STOXX Europe 600 firms (2013–2022) and the option-implied Carbon VIX (CVIX), we show that high-emission firms trade at a modest discount during tranquil periods but earn significantly higher excess returns during high uncertainty episodes. A 10-point CVIX increase raises monthly returns for top emitters by approximately 0.30 percentage points. This reconciles apparently contradictory findings in the literature and has practical implications for carbon screens and stress testing.
+        </p>
+
+        <div style="margin-top:1.25rem;" class="flex-row">
+          <a href="papers.html#wp-carbon-vol" class="btn btn-sm btn-outline">Carbon Price Volatility →</a>
+          <a href="garden/carbon-markets.html" class="btn btn-sm btn-outline">🌿 Garden node →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Sebastian Rink</div>
+      <div>Researcher in Sustainable Finance · Frankfurt School of Finance &amp; Management</div>
+    </div>
+    <nav class="footer-links">
+      <a href="papers.html">Papers</a>
+      <a href="garden/index.html">Garden</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

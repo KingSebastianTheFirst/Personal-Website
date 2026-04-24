@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Learning for Sustainability Data — Garden — Sebastian Rink</title>
+  <meta name="description" content="A digital garden note on using machine learning to fill gaps in ESG and corporate sustainability data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Sebastian Rink</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../papers.html">Papers</a></li>
+      <li><a href="index.html" class="active">Garden</a></li>
+      <li><a href="../teaching.html">Teaching</a></li>
+      <li><a href="../path.html">Path</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Garden</a> <span>›</span> ML for Sustainability Data</div>
+    <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-bottom:0.5rem;">
+      <h1 style="margin:0;">Machine Learning for Sustainability Data</h1>
+      <span class="status status-growing">🌿 Growing</span>
+    </div>
+    <p class="lead">Using ML to fill the enormous gaps in firm-level sustainability data.</p>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="node-body">
+
+      <div class="node-section">
+        <h2>📌 What is the problem?</h2>
+        <p>
+          Sustainable finance research and practice both depend on firm-level sustainability data — most importantly, data on corporate greenhouse gas emissions, but also on biodiversity footprints, water usage, waste discharge, labour conditions, and governance structures.
+        </p>
+        <p>
+          The fundamental problem is that this data is largely missing. Reporting is voluntary for most firms in most jurisdictions (though this is changing), and even where reporting exists, it is inconsistent across firms, often of unknown quality, and biased toward large corporations. For SMEs — which represent the large majority of firms in any economy — sustainability data is almost completely absent.
+        </p>
+      </div>
+
+      <div class="node-section">
+        <h2>💡 Why machine learning?</h2>
+        <p>
+          Earlier approaches to filling sustainability data gaps used simple proxies — estimating a firm's emissions proportionally to its revenue or employee count, or running a regression against industry averages. These methods are transparent but suffer from poor out-of-sample predictive performance, because firms in the same industry can vary enormously in their sustainability characteristics based on technology, location, supply chain, and business model.
+        </p>
+        <p>
+          Machine learning is well-suited to this problem because it can search non-parametric, high-dimensional spaces to capture complex non-linear relationships between financial data (which is abundant) and sustainability metrics (which are scarce). The challenge is that ML introduces its own uncertainties — predictions come without natural confidence intervals — and requires careful validation.
+        </p>
+      </div>
+
+      <div class="node-section">
+        <h2>🔬 In my research</h2>
+        <p>
+          Two papers address the ML-sustainability data nexus from related but distinct angles.
+        </p>
+        <p>
+          <strong>Corporate Sustainability Data and Machine Learning</strong> (with Haas and Moslener, 2025 — published as a working version in BIS IFC Bulletin No. 65) presents a general ML framework for estimating sustainability metrics from financial data. Key innovations: (1) the framework is metric-agnostic, meaning it can be applied to carbon emissions, waste discharge, or other metrics without separate domain-specific models; (2) it quantifies prediction uncertainty via conformal prediction, allowing users to understand when they can trust the estimates; and (3) it uses prediction-powered inference to support downstream causal research even when many sustainability values are estimated rather than observed.
+        </p>
+        <p>
+          <strong>Machine Learning and Micro-Prudential Climate Stress Testing</strong> (with Haas, Kempa, and Moslener, 2025) applies a version of this ML framework specifically to climate stress testing, using ML-estimated Scope 1 emissions to dramatically expand the coverage of firm-level stress tests to include SMEs.
+        </p>
+      </div>
+
+      <div class="node-section">
+        <h2>⚠️ Important caveats</h2>
+        <ul style="margin-left:1.5rem; color:var(--text-muted); font-size:0.93rem; list-style:disc;">
+          <li>ML predictions are imperfect. Prediction uncertainty can be large, especially for firms that are structurally different from the training set.</li>
+          <li>ML cannot substitute for actual disclosure — it can help bridge data gaps but is not a long-term alternative to comprehensive reporting requirements.</li>
+          <li>Prediction-powered inference tools help but require careful application. Using estimated sustainability data in causal research introduces statistical challenges that need to be addressed explicitly.</li>
+        </ul>
+      </div>
+
+      <div class="node-section">
+        <h2>🔗 Related concepts</h2>
+        <div class="node-relations">
+          <a href="esg-ratings.html" class="relation-chip">📊 ESG Ratings</a>
+          <a href="climate-stress-testing.html" class="relation-chip">🌡️ Climate Stress Testing</a>
+          <a href="disclosure-design.html" class="relation-chip">📣 Disclosure Design</a>
+          <a href="../research.html#esg-data" class="relation-chip">📊 Research: ESG Data</a>
+        </div>
+      </div>
+
+      <div class="node-section">
+        <h2>📄 Related papers</h2>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <div class="paper-entry" style="margin:0; padding:1rem 1.25rem;">
+            <div class="paper-title">Corporate Sustainability Data and Machine Learning</div>
+            <div class="paper-authors">Haas, Moslener, Rink · BIS IFC Bulletin No. 65 · 2025</div>
+            <a href="../papers.html#wp-ml-data" class="btn btn-sm btn-outline" style="margin-top:0.5rem;">Full entry →</a>
+          </div>
+          <div class="paper-entry" style="margin:0; padding:1rem 1.25rem;">
+            <div class="paper-title">Machine Learning and Micro-Prudential Climate Stress Testing</div>
+            <div class="paper-authors">Haas, Kempa, Moslener, Rink · 2025</div>
+            <a href="../papers.html#wp-ml-stress" class="btn btn-sm btn-outline" style="margin-top:0.5rem;">Full entry →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="node-section">
+        <div class="tag-list">
+          <span class="tag">machine learning</span>
+          <span class="tag">ESG data</span>
+          <span class="tag">carbon emissions</span>
+          <span class="tag">prediction uncertainty</span>
+          <span class="tag">conformal prediction</span>
+          <span class="tag">SMEs</span>
+          <span class="tag">data gaps</span>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border);">
+        <a href="index.html" class="btn btn-outline">← Back to Garden</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><div class="footer-brand">Sebastian Rink</div><div>Researcher in Sustainable Finance · Frankfurt School</div></div>
+    <nav class="footer-links"><a href="../research.html">Research</a><a href="../papers.html">Papers</a><a href="../contact.html">Contact</a></nav>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

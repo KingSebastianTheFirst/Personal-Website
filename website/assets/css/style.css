@@ -1,27 +1,23 @@
 /* ================================================================
    Sebastian Rink — Academic Website Stylesheet
-   A sustainable finance digital garden
    ================================================================ */
 
 /* ── 1. Variables ─────────────────────────────────────────────── */
 :root {
-  --bg:          #F5F3EC;
+  --bg:          #F4F6F9;
   --surface:     #FFFFFF;
-  --surface-alt: #EBE9DF;
-  --primary:     #2B5F4A;
-  --primary-hov: #1E4335;
-  --teal:        #186B68;
-  --teal-light:  #CCE6E5;
-  --warm:        #A97025;
-  --warm-light:  #F0E0C0;
+  --surface-alt: #E8EEF5;
+  --primary:     #1D3C5A;
+  --primary-hov: #142C43;
+  --teal:        #2580B3;
+  --teal-light:  #C8DFF0;
+  --warm:        #A07030;
+  --warm-light:  #F0E5CC;
   --text:        #1A1C26;
   --text-muted:  #5C6470;
-  --border:      #CEC9BE;
-  --seedling:    #5B9D3C;
-  --growing:     #2672A8;
-  --evergreen:   #2B5F4A;
-  --tag-bg:      #D8E8DA;
-  --tag-text:    #224438;
+  --border:      #C8D4DE;
+  --tag-bg:      #D0E5F5;
+  --tag-text:    #1D3C5A;
   --font-head:   'Lora', Georgia, 'Times New Roman', serif;
   --font-body:   'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --max-w:       1080px;
@@ -29,9 +25,9 @@
   --radius:      12px;
   --radius-sm:   6px;
   --radius-lg:   20px;
-  --shadow-sm:   0 1px 4px rgba(27,48,38,.07);
-  --shadow:      0 3px 14px rgba(27,48,38,.10);
-  --shadow-lg:   0 8px 32px rgba(27,48,38,.14);
+  --shadow-sm:   0 1px 4px rgba(20,40,65,.07);
+  --shadow:      0 3px 14px rgba(20,40,65,.10);
+  --shadow-lg:   0 8px 32px rgba(20,40,65,.14);
   --t:           0.2s ease;
 }
 
@@ -239,7 +235,7 @@ blockquote {
   position: absolute;
   top: -80px; right: -80px;
   width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(43,95,74,.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(29,60,90,.07) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -297,19 +293,19 @@ blockquote {
   justify-content: center;
 }
 
-.hero-photo-blob {
+.hero-photo-bg {
   position: absolute;
-  inset: -20px;
-  background: radial-gradient(ellipse at 60% 40%, rgba(43,95,74,.12), transparent 70%);
-  border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+  inset: -10px;
+  background: linear-gradient(135deg, rgba(29,60,90,.08), rgba(37,128,179,.05));
+  border-radius: calc(var(--radius-lg) + 6px);
 }
 
 .hero-photo {
-  width: 320px;
-  height: 380px;
+  width: 300px;
+  height: 360px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 50% 50% 48% 52% / 55% 55% 45% 45%;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   position: relative;
   z-index: 1;
@@ -317,10 +313,10 @@ blockquote {
 }
 
 .hero-photo-fallback {
-  width: 320px;
-  height: 380px;
+  width: 300px;
+  height: 360px;
   background: linear-gradient(135deg, var(--primary), var(--teal));
-  border-radius: 50% 50% 48% 52% / 55% 55% 45% 45%;
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,7 +349,7 @@ blockquote {
 .btn-primary:hover {
   background: var(--primary-hov);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(43,95,74,.3);
+  box-shadow: 0 4px 16px rgba(29,60,90,.3);
   transform: translateY(-1px);
 }
 
@@ -482,12 +478,6 @@ blockquote {
   transform: translateY(-2px);
 }
 
-.research-card .area-icon {
-  font-size: 1.8rem;
-  margin-bottom: 0.75rem;
-  display: block;
-}
-
 .research-card h3 {
   margin-bottom: 0.5rem;
 }
@@ -495,48 +485,6 @@ blockquote {
 .research-card p {
   font-size: 0.93rem;
   color: var(--text-muted);
-}
-
-/* Garden node card */
-.garden-card {
-  background: var(--surface);
-  border-radius: var(--radius);
-  padding: 1.6rem;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow var(--t), transform var(--t);
-  display: flex;
-  flex-direction: column;
-}
-
-.garden-card:hover {
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
-}
-
-.garden-card-head {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.garden-card h3 {
-  font-size: 1.05rem;
-  margin-bottom: 0;
-}
-
-.garden-card h3 a {
-  color: var(--text);
-}
-.garden-card h3 a:hover { color: var(--primary); }
-
-.garden-card p {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  flex-grow: 1;
-  margin-bottom: 1rem;
 }
 
 /* ── 10. Tags & Badges ────────────────────────────────────────── */
@@ -581,28 +529,13 @@ blockquote {
   letter-spacing: 0.01em;
 }
 
-.status-seedling {
-  background: rgba(91,157,60,.12);
-  color: var(--seedling);
-}
-
-.status-growing {
-  background: rgba(38,114,168,.12);
-  color: var(--growing);
-}
-
-.status-evergreen {
-  background: rgba(43,95,74,.12);
-  color: var(--evergreen);
-}
-
 .status-published {
-  background: rgba(43,95,74,.12);
+  background: rgba(29,60,90,.10);
   color: var(--primary);
 }
 
 .status-review {
-  background: rgba(169,112,37,.12);
+  background: rgba(160,112,48,.12);
   color: var(--warm);
 }
 
@@ -611,7 +544,7 @@ blockquote {
   font-size: 0.6rem;
 }
 
-/* ── 11. Timeline (Path page) ─────────────────────────────────── */
+/* ── 11. Timeline ─────────────────────────────────────────────── */
 .timeline {
   position: relative;
   padding-left: 2rem;
@@ -779,94 +712,7 @@ blockquote {
   background: var(--bg);
 }
 
-/* ── 14. Garden Filter ────────────────────────────────────────── */
-.garden-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-.filter-btn {
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.4rem 1rem;
-  border-radius: 99px;
-  border: 1.5px solid var(--border);
-  color: var(--text-muted);
-  background: var(--surface);
-  cursor: pointer;
-  transition: all var(--t);
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-  border-color: var(--primary);
-  color: var(--primary);
-  background: var(--tag-bg);
-}
-
-.filter-btn[data-filter="seedling"].active {
-  border-color: var(--seedling);
-  color: var(--seedling);
-  background: rgba(91,157,60,.1);
-}
-.filter-btn[data-filter="growing"].active {
-  border-color: var(--growing);
-  color: var(--growing);
-  background: rgba(38,114,168,.1);
-}
-.filter-btn[data-filter="evergreen"].active {
-  border-color: var(--evergreen);
-  color: var(--evergreen);
-  background: rgba(43,95,74,.1);
-}
-
-/* ── 15. Garden Node Page ─────────────────────────────────────── */
-.node-body {
-  max-width: 720px;
-}
-
-.node-section {
-  margin-bottom: 2.5rem;
-}
-
-.node-section h2 {
-  font-size: 1.15rem;
-  color: var(--primary);
-  margin-bottom: 0.6rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.node-relations {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.relation-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.83rem;
-  font-weight: 500;
-  padding: 0.3rem 0.8rem;
-  border-radius: 8px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  text-decoration: none;
-  transition: all var(--t);
-}
-.relation-chip:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-
-/* ── 16. About / Profile ──────────────────────────────────────── */
+/* ── 14. About / Profile ──────────────────────────────────────── */
 .profile-grid {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -912,9 +758,7 @@ blockquote {
   border-color: var(--primary);
 }
 
-.profile-link .icon { font-size: 1rem; }
-
-/* ── 17. Personal interests block ────────────────────────────── */
+/* ── 15. Personal interests block ────────────────────────────── */
 .interests-block {
   background: linear-gradient(135deg, var(--tag-bg), var(--teal-light));
   border-radius: var(--radius);
@@ -940,9 +784,8 @@ blockquote {
   font-size: 0.92rem;
   color: var(--text);
 }
-.interest-item .icon { font-size: 1.1rem; }
 
-/* ── 18. Teaching cards ───────────────────────────────────────── */
+/* ── 16. Teaching cards ───────────────────────────────────────── */
 .teaching-entry {
   background: var(--surface);
   border-radius: var(--radius);
@@ -971,7 +814,7 @@ blockquote {
   color: var(--primary);
 }
 
-/* ── 19. Contact ──────────────────────────────────────────────── */
+/* ── 17. Contact ──────────────────────────────────────────────── */
 .contact-card {
   background: var(--surface);
   border-radius: var(--radius-lg);
@@ -1000,12 +843,6 @@ blockquote {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-}
-
-.contact-item .icon {
-  font-size: 1.25rem;
-  flex-shrink: 0;
-  margin-top: 0.1rem;
 }
 
 .contact-item-body {
@@ -1047,7 +884,7 @@ blockquote {
   background: var(--tag-bg);
 }
 
-/* ── 20. Grants / Service list ────────────────────────────────── */
+/* ── 18. Grants / Service list ────────────────────────────────── */
 .grant-list, .service-list {
   display: flex;
   flex-direction: column;
@@ -1083,7 +920,7 @@ blockquote {
   margin-bottom: 0.2rem;
 }
 
-/* ── 21. Footer ───────────────────────────────────────────────── */
+/* ── 19. Footer ───────────────────────────────────────────────── */
 .site-footer {
   margin-top: auto;
   background: var(--surface-alt);
@@ -1123,7 +960,7 @@ blockquote {
 }
 .footer-links a:hover { color: var(--primary); }
 
-/* ── 22. Home section: Featured strip ────────────────────────── */
+/* ── 20. Home section: Featured strip ────────────────────────── */
 .featured-strip {
   background: var(--surface);
   border-radius: var(--radius);
@@ -1140,16 +977,16 @@ blockquote {
   gap: 0.6rem;
 }
 
-/* ── 23. Intro box ────────────────────────────────────────────── */
+/* ── 21. Intro box ────────────────────────────────────────────── */
 .intro-box {
-  background: linear-gradient(135deg, rgba(43,95,74,.06), rgba(24,107,104,.06));
+  background: linear-gradient(135deg, rgba(29,60,90,.05), rgba(37,128,179,.04));
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem 2.5rem;
   margin-bottom: 2.5rem;
 }
 
-/* ── 24. Responsive ───────────────────────────────────────────── */
+/* ── 22. Responsive ───────────────────────────────────────────── */
 @media (max-width: 900px) {
   .grid-hero {
     grid-template-columns: 1fr;
@@ -1158,8 +995,8 @@ blockquote {
     order: -1;
   }
   .hero-photo, .hero-photo-fallback {
-    width: 240px;
-    height: 290px;
+    width: 220px;
+    height: 260px;
     margin-inline: auto;
   }
   .hero h1 {
@@ -1218,7 +1055,7 @@ blockquote {
   .hero-actions .btn { width: 100%; justify-content: center; }
 }
 
-/* ── 25. Animations ───────────────────────────────────────────── */
+/* ── 23. Animations ───────────────────────────────────────────── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -1228,7 +1065,7 @@ blockquote {
   animation: fadeUp 0.5s ease both;
 }
 
-/* ── 26. Print ────────────────────────────────────────────────── */
+/* ── 24. Print ────────────────────────────────────────────────── */
 @media print {
   .site-nav, .site-footer, .btn, .nav-toggle { display: none !important; }
   body { background: #fff; }

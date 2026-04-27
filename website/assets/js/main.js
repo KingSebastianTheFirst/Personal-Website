@@ -34,30 +34,6 @@
   });
 })();
 
-/* ── Garden filter ─────────────────────────────────────────── */
-(function () {
-  const filters = document.querySelectorAll('.filter-btn');
-  const nodes   = document.querySelectorAll('.garden-card[data-status]');
-  if (!filters.length || !nodes.length) return;
-
-  filters.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filter = btn.dataset.filter;
-
-      filters.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      nodes.forEach(node => {
-        if (filter === 'all' || node.dataset.status === filter) {
-          node.style.display = '';
-        } else {
-          node.style.display = 'none';
-        }
-      });
-    });
-  });
-})();
-
 /* ── Active nav link ───────────────────────────────────────── */
 (function () {
   const path = window.location.pathname;
@@ -65,7 +41,7 @@
     const href = a.getAttribute('href');
     if (!href) return;
     const hrefPath = new URL(href, window.location.href).pathname;
-    if (path === hrefPath || (path.includes('/garden/') && href.includes('/garden/'))) {
+    if (path === hrefPath) {
       a.classList.add('active');
     }
   });

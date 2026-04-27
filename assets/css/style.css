@@ -960,24 +960,10 @@ blockquote {
 }
 .footer-links a:hover { color: var(--primary); }
 
-.footer-legal {
-  max-width: var(--max-w);
-  margin-inline: auto;
-  padding-inline: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
-  margin-top: 1.25rem;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  display: flex;
-  gap: 1.5rem;
+.footer-sep {
+  color: var(--border);
+  user-select: none;
 }
-
-.footer-legal a {
-  color: var(--text-muted);
-  font-size: 0.8rem;
-}
-.footer-legal a:hover { color: var(--primary); }
 
 /* ── 20. Home section: Featured strip ────────────────────────── */
 .featured-strip {
